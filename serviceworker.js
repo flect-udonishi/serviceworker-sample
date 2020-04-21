@@ -49,7 +49,7 @@ function onFetch(event) {
                 }
                 // if not found in cache, return default offline content for navigate requests
                 if (event.request.mode === 'navigate' || (event.request.method === 'GET' && event.request.headers.get('accept').includes('text/html'))) {
-                    return caches.match('/offline.html');
+                    return caches.match('/serviceworker-sample/offline.html');
                 }
             })
         })
