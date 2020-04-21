@@ -2,9 +2,9 @@ var CACHE_VERSION = 'v1';
 var CACHE_NAME = CACHE_VERSION + ':sw-cache-';
 
 var contentToCache = [
-    '/',
-    '/index.html',
-    '/offline.html'
+    '/serviceworker-sample/',
+    '/serviceworker-sample/index.html',
+    '/serviceworker-sample/offline.html'
 ];
 
 self.addEventListener('install', onInstall);
