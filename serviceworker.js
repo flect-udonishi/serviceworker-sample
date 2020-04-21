@@ -10,7 +10,7 @@ var contentToCache = [
 self.addEventListener('install', onInstall);
 function onInstall(event) {
     event.waitUtil(
-        caches.open(CACHE_NAME).then(function prefill(cache) {
+        caches.open(CACHE_NAME).then(function(cache) {
             return cache.addAll(contentToCache);
         })
     );
